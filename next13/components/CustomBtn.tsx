@@ -3,11 +3,11 @@
 import React from 'react'
 import Image  from 'next/image'
 import { CustomBtnProps } from '@/types'
-const CustomBtn = ({ title ,containerStyles, handleClick}: CustomBtnProps) => {
+const CustomBtn = ({ title ,containerStyles, handleClick , btnType}: CustomBtnProps) => {
   return (
     <button 
     disabled={ false}
-    type={'button'}
+    type={btnType}
     className={`custom-btn ${containerStyles}`}
     onClick={handleClick}
     >
